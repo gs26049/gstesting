@@ -1,0 +1,967 @@
+{
+  "title": "세포 퀴즈",
+  "totalQuestions": 30,
+  "extractedAt": "2026-06-25T12:20:49.914Z",
+  "questions": [
+    {
+      "number": 1,
+      "question": "핵 내부에서 리보솜 $rRNA$를 합성하고 리보솜의 대단위체와 소단위체를 조립하는 장소는 어디입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "핵라민 (Nuclear lamina)",
+          "isCorrect": false,
+          "rationale": "핵라민은 핵막을 지지하는 중간섬유 구조물로 기계적 지지 역할을 합니다."
+        },
+        {
+          "label": "B",
+          "text": "핵공 복합체 (Pore complex)",
+          "isCorrect": false,
+          "rationale": "핵공 복합체는 핵과 세포질 사이의 물질 교환을 담당하는 통로이지 합성 장소는 아닙니다."
+        },
+        {
+          "label": "C",
+          "text": "조면소포체 (Rough ER)",
+          "isCorrect": false,
+          "rationale": "조면소포체는 리보솜이 부착되어 단백질을 합성하는 곳이지 리보솜 자체를 조립하는 곳은 아닙니다."
+        },
+        {
+          "label": "D",
+          "text": "인 (Nucleolus)",
+          "isCorrect": true,
+          "rationale": "인은 $rRNA$ 합성 및 리보솜 단위체 조립이 일어나는 핵 내의 특화된 부위입니다."
+        }
+      ],
+      "hint": "핵 내에서 관찰되는 밀도가 높은 부위로, 단백질 합성량이 많은 세포에서 특히 크게 발달합니다.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 2,
+      "question": "활면소포체($SER$)의 주요 기능 중 간세포에서 특히 중요한 역할을 수행하는 대사 과정은 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "분비 단백질의 합성 및 수송 소포 형성",
+          "isCorrect": false,
+          "rationale": "이는 리보솜이 부착된 조면소포체($RER$)의 전형적인 기능입니다."
+        },
+        {
+          "label": "B",
+          "text": "가수분해 효소를 이용한 세포 내 소화",
+          "isCorrect": false,
+          "rationale": "세포 내 소화는 소포체가 아닌 리소좀의 핵심 기능입니다."
+        },
+        {
+          "label": "C",
+          "text": "당단백질의 탄수화물 사슬 수정 및 가공",
+          "isCorrect": false,
+          "rationale": "이 과정은 주로 골지체에서 일어나는 단백질 변형 과정입니다."
+        },
+        {
+          "label": "D",
+          "text": "독성 물질에 수산기($-\\text{OH}$)를 첨가하여 해독",
+          "isCorrect": true,
+          "rationale": "활면소포체는 수산기 첨가를 통해 독성 물질의 수용성을 높여 배설을 용이하게 하는 해독 작용을 합니다."
+        }
+      ],
+      "hint": "약물이나 독소를 몸 밖으로 내보내기 위해 물에 잘 녹는 형태로 변형하는 과정입니다.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 3,
+      "question": "골지체의 구조적 특징인 '방향성'에 대한 설명으로 옳은 것은 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$trans$ 면은 항상 핵막과 물리적으로 연결되어 있다.",
+          "isCorrect": false,
+          "rationale": "골지체는 핵막과 직접 연결되어 있지 않으며 소포체와 수송 소포를 통해 교류합니다."
+        },
+        {
+          "label": "B",
+          "text": "수송 소포는 오직 $trans$ 면을 통해서만 골지체로 들어올 수 있다.",
+          "isCorrect": false,
+          "rationale": "$trans$ 면은 물질이 나가는 출구 역할을 하며, 들어오는 입구는 $cis$ 면입니다."
+        },
+        {
+          "label": "C",
+          "text": "시스터나 성숙 모델에 따르면 시스터나는 $trans$에서 $cis$ 방향으로 이동한다.",
+          "isCorrect": false,
+          "rationale": "시스터나 성숙 모델은 막 구조 자체가 $cis$에서 $trans$ 방향으로 점진적으로 이동하며 성숙한다고 설명합니다."
+        },
+        {
+          "label": "D",
+          "text": "$cis$ 면은 소포체에서 온 수송 소포를 받아들이는 수용 면이다.",
+          "isCorrect": true,
+          "rationale": "골지체는 소포체와 인접한 $cis$ 면으로 물질을 수용하고 $trans$ 면으로 방출하는 뚜렷한 방향성을 가집니다."
+        }
+      ],
+      "hint": "소포체에서 생성된 물질이 골지체의 어느 쪽으로 먼저 도착하는지 생각해보세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 4,
+      "question": "리소좀 내부의 가수분해 효소가 세포질로 유출되어도 세포 자체가 즉시 파괴되지 않는 주된 이유는 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "가수분해 효소는 산성 환경에서만 활성화되는데 세포질은 중성에 가깝기 때문",
+          "isCorrect": true,
+          "rationale": "리소좀 효소는 낮은 $pH$에서 최적의 활성을 보이므로, 중성인 세포질에서는 활성이 억제되어 세포를 보호합니다."
+        },
+        {
+          "label": "B",
+          "text": "유출된 효소는 즉시 미토콘드리아에 의해 흡수되어 분해되기 때문",
+          "isCorrect": false,
+          "rationale": "미토콘드리아는 에너지 변환 소기관이며 유출된 효소를 흡수하여 처리하는 기능을 하지 않습니다."
+        },
+        {
+          "label": "C",
+          "text": "세포질 내부에 리소좀 효소를 중화하는 알칼리성 물질이 가득하기 때문",
+          "isCorrect": false,
+          "rationale": "세포질은 완충 작용을 하지만 효소를 중화하는 특수 물질이 가득 차 있는 구조는 아닙니다."
+        },
+        {
+          "label": "D",
+          "text": "리소좀 효소는 핵막을 통과할 수 없어서 유전 물질을 공격하지 못하기 때문",
+          "isCorrect": false,
+          "rationale": "효소가 유전 물질을 공격하지 못하는 것이 세포질 전체의 안전을 보장하는 근본 원인은 아닙니다."
+        }
+      ],
+      "hint": "효소의 활성이 주변 환경의 $pH$ 조건에 따라 어떻게 달라지는지 고려해보세요.",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 5,
+      "question": "미토콘드리아와 엽록체의 '세포내공생설'을 뒷받침하는 근거로 적절하지 않은 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "단일막 구조를 가지며 소포체로부터 직접 생성된다.",
+          "isCorrect": true,
+          "rationale": "두 소기관은 이중막 구조를 가지며, 소포체와 독립적으로 자체 복제를 통해 증식합니다."
+        },
+        {
+          "label": "B",
+          "text": "세포의 분열 주기와 무관하게 자체적인 이분법적 복제를 수행한다.",
+          "isCorrect": false,
+          "rationale": "스스로 복제하여 수를 늘리는 능력은 과거 독립적인 생명체였음을 시사합니다."
+        },
+        {
+          "label": "C",
+          "text": "진핵세포의 것보다 원핵세포의 것과 유사한 리보솜을 가진다.",
+          "isCorrect": false,
+          "rationale": "자체 리보솜의 구조가 세균의 것과 유사하다는 점은 이들의 원핵생물 기원을 뒷받침합니다."
+        },
+        {
+          "label": "D",
+          "text": "핵의 $DNA$와는 별개로 독자적인 원형 $DNA$를 보유한다.",
+          "isCorrect": false,
+          "rationale": "원핵생물과 유사한 원형 $DNA$를 가진다는 점은 강력한 공생설의 증거입니다."
+        }
+      ],
+      "hint": "이 소기관들이 과거에 독립적인 원핵생물이었다면 어떤 구조적 특징을 유지하고 있을지 생각해보세요.",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 6,
+      "question": "퍼옥시좀($Peroxisome$)에 대한 설명으로 옳은 것을 모두 고른 것은? <br> (가) 산화 과정에서 생성된 유독한 $\\text{H}_2\\text{O}_2$를 카탈레이스로 분해한다. <br> (나) 미토콘드리아와 마찬가지로 이중막 구조를 가진다. <br> (다) 지방산을 분해하여 세포 호흡의 기질로 제공한다. <br> (라) 자체적인 $DNA$를 가지고 있어 스스로 복제한다.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(가), (나)",
+          "isCorrect": false,
+          "rationale": "퍼옥시좀은 미토콘드리아나 엽록체와 달리 단일막 구조를 가집니다."
+        },
+        {
+          "label": "B",
+          "text": "(가), (다)",
+          "isCorrect": true,
+          "rationale": "퍼옥시좀은 단일막 구조이며 자체 $DNA$가 없고, 산화 대사와 지방산 분해 및 과산화수소 제거를 담당합니다."
+        },
+        {
+          "label": "C",
+          "text": "(나), (라)",
+          "isCorrect": false,
+          "rationale": "퍼옥시좀은 이중막이 아니며 자체 $DNA$도 보유하지 않습니다."
+        },
+        {
+          "label": "D",
+          "text": "(다), (라)",
+          "isCorrect": false,
+          "rationale": "지방산 분해 기능은 맞지만, 자체 $DNA$를 통한 복제 기능은 없습니다."
+        }
+      ],
+      "hint": "막의 개수와 유전 물질의 유무를 미토콘드리아와 비교해 보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 7,
+      "question": "세포골격 중 미세소관($Microtubule$)의 기능과 가장 거리가 먼 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "섬모와 편모의 내부 골격 구조 유지",
+          "isCorrect": false,
+          "rationale": "섬모와 편모는 미세소관이 $9+2$ 배열을 이루어 형성된 운동 기관입니다."
+        },
+        {
+          "label": "B",
+          "text": "세포질 분열 시 분열구($Cleavage\\ furrow$) 형성",
+          "isCorrect": true,
+          "rationale": "분열구 형성은 미세소관이 아니라 액틴 미세섬유와 마이오신의 상호작용으로 일어납니다."
+        },
+        {
+          "label": "C",
+          "text": "세포 분열 시 염색체를 이동시키는 방추사 형성",
+          "isCorrect": false,
+          "rationale": "방추사는 미세소관이 조립되어 만들어지는 핵심 구조물입니다."
+        },
+        {
+          "label": "D",
+          "text": "운동 단백질이 소낭을 운반하는 물리적 트랙 제공",
+          "isCorrect": false,
+          "rationale": "미세소관은 세포 내 소낭 수송을 위한 레일 역할을 수행합니다."
+        }
+      ],
+      "hint": "세포의 허리를 조여서 나누는 과정에 관여하는 섬유가 무엇인지 떠올려보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 8,
+      "question": "운동성을 가진 진핵세포의 섬모와 편모가 공통적으로 가지는 미세소관 배열 패턴은 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$9+0$ 구조",
+          "isCorrect": false,
+          "rationale": "$9+0$ 구조는 운동성이 없는 중심립이나 기저체에서 발견되는 패턴입니다."
+        },
+        {
+          "label": "B",
+          "text": "$3 \\times 9$ 구조",
+          "isCorrect": false,
+          "rationale": "3개의 미세소관이 한 세트가 되어 9세트를 이루는 구조는 중심립의 특징입니다."
+        },
+        {
+          "label": "C",
+          "text": "$9+2$ 구조",
+          "isCorrect": true,
+          "rationale": "운동성 섬모와 편모는 외곽 9쌍의 쌍관체와 중앙 2개의 단일 미세소관으로 구성된 $9+2$ 패턴을 가집니다."
+        },
+        {
+          "label": "D",
+          "text": "무작위 그물망 구조",
+          "isCorrect": false,
+          "rationale": "섬모와 편모는 매우 정교하고 규칙적인 기하학적 배열을 가집니다."
+        }
+      ],
+      "hint": "중앙에 두 개의 독립적인 미세소관이 존재하는지 여부를 확인하세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 9,
+      "question": "중간섬유($Intermediate\\ Filament$)가 미세소관이나 미세섬유와 구별되는 가장 큰 특징은 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$ATP$를 소모하여 수축력을 발생시키는 주된 성분이다.",
+          "isCorrect": false,
+          "rationale": "수축력 발생은 주로 미세섬유(액틴)와 마이오신의 기능입니다."
+        },
+        {
+          "label": "B",
+          "text": "모든 식물 세포와 동물 세포에서 공통적으로 대량 발견된다.",
+          "isCorrect": false,
+          "rationale": "중간섬유는 일부 동물 세포에서만 특이적으로 발견되는 경향이 있습니다."
+        },
+        {
+          "label": "C",
+          "text": "운동 단백질인 디네인과 결합하여 세포 운동성을 부여한다.",
+          "isCorrect": false,
+          "rationale": "디네인은 미세소관과 결합하며, 중간섬유는 직접적인 운동성보다는 지지에 치중합니다."
+        },
+        {
+          "label": "D",
+          "text": "세포 내에서 비교적 영구적이며 구조적 안정성이 매우 높다.",
+          "isCorrect": true,
+          "rationale": "중간섬유는 다른 골격에 비해 분해와 재조립이 적고 세포의 형태를 고정하는 정적 역할을 합니다."
+        }
+      ],
+      "hint": "세포 소기관을 특정 위치에 고정하거나 핵의 형태를 유지하는 등 '불변성'에 집중해 보세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 10,
+      "question": "식물 세포벽의 구조 중 인접한 세포들을 서로 접착시키는 '펙틴' 성분이 풍부한 층은 어디입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2차 세포벽 (Secondary cell wall)",
+          "isCorrect": false,
+          "rationale": "2차 세포벽은 리그닌을 함유하여 견고한 지지력을 제공하는 안쪽 층입니다."
+        },
+        {
+          "label": "B",
+          "text": "1차 세포벽 (Primary cell wall)",
+          "isCorrect": false,
+          "rationale": "1차 세포벽은 어린 세포가 분비하는 얇고 유연한 벽입니다."
+        },
+        {
+          "label": "C",
+          "text": "중간라멜라 (Middle lamella)",
+          "isCorrect": true,
+          "rationale": "중간라멜라는 인접한 세포벽 사이에 위치하며 끈적한 다당류인 펙틴으로 세포를 접착합니다."
+        },
+        {
+          "label": "D",
+          "text": "원형질막 (Plasma membrane)",
+          "isCorrect": false,
+          "rationale": "원형질막은 세포벽의 성분이 아니며 세포 최내곽의 막 구조입니다."
+        }
+      ],
+      "hint": "세포와 세포 사이를 채우고 있는 풀과 같은 역할을 하는 층을 찾아보세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 11,
+      "question": "동물세포의 세포외기질($ECM$)에서 세포 내부의 세포골격과 외부의 신호를 물리적으로 연결하는 수용체 단백질은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "인테그린 (Integrin)",
+          "isCorrect": true,
+          "rationale": "인테그린은 막 관통 단백질로, 외부의 파이브로넥틴과 내부의 미세섬유를 물리적으로 연결합니다."
+        },
+        {
+          "label": "B",
+          "text": "케라틴 (Keratin)",
+          "isCorrect": false,
+          "rationale": "케라틴은 세포 내 중간섬유의 구성 성분이지 세포외 수용체가 아닙니다."
+        },
+        {
+          "label": "C",
+          "text": "콜라겐 (Collagen)",
+          "isCorrect": false,
+          "rationale": "콜라겐은 $ECM$의 인장력을 견디는 주된 섬유 성분이지 수용체는 아닙니다."
+        },
+        {
+          "label": "D",
+          "text": "프로테오글리칸 (Proteoglycan)",
+          "isCorrect": false,
+          "rationale": "프로테오글리칸은 단백질과 탄수화물의 복합체로 $ECM$의 바탕질을 형성합니다."
+        }
+      ],
+      "hint": "세포막에 내장되어 안팎을 이어주는 '통합(Integrate)'의 의미를 가진 이름을 생각해보세요.",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 12,
+      "question": "식물세포의 원형질연락사($Plasmodesmata$)를 통해 이동할 수 있는 물질의 범위로 적절하지 않은 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "특정 단백질 분자",
+          "isCorrect": false,
+          "rationale": "최근 연구에 따르면 특정 단백질들도 원형질연락사를 통해 인접 세포로 전달될 수 있습니다."
+        },
+        {
+          "label": "B",
+          "text": "$RNA$와 같은 유전 정보 물질",
+          "isCorrect": false,
+          "rationale": "$RNA$ 분자는 식물 전체의 신호 전달을 위해 이 통로를 경유할 수 있습니다."
+        },
+        {
+          "label": "C",
+          "text": "미토콘드리아와 같은 거대 세포 소기관",
+          "isCorrect": true,
+          "rationale": "원형질연락사는 분자 수준의 이동 통로이며, 거대한 소기관은 이동할 수 없습니다."
+        },
+        {
+          "label": "D",
+          "text": "물과 작은 무기 이온",
+          "isCorrect": false,
+          "rationale": "작은 분자들은 이 통로를 통해 매우 자유롭게 확산됩니다."
+        }
+      ],
+      "hint": "이 통로가 세포막과 세포질을 공유하지만, 물리적인 크기 제한이 있음을 고려하세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 13,
+      "question": "동물세포의 세포간 연접 중 '방수' 기능이 필요하거나 체액의 누출을 막아야 하는 조직에서 가장 발달한 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "원형질연락사 (Plasmodesmata)",
+          "isCorrect": false,
+          "rationale": "이는 식물세포에서 발견되는 통로 구조입니다."
+        },
+        {
+          "label": "B",
+          "text": "밀착연접 (Tight Junctions)",
+          "isCorrect": true,
+          "rationale": "밀착연접은 세포막을 단단히 밀봉하여 세포 사이 공간을 통한 물질 누출을 차단합니다."
+        },
+        {
+          "label": "C",
+          "text": "데스모솜 (Desmosome)",
+          "isCorrect": false,
+          "rationale": "데스모솜은 기계적 고정 장치로, 누출 차단보다는 결합 강도에 치중합니다."
+        },
+        {
+          "label": "D",
+          "text": "간극연접 (Gap Junctions)",
+          "isCorrect": false,
+          "rationale": "간극연접은 물질 이동을 위한 통로를 제공하므로 밀봉 기능과는 거리가 멉니다."
+        }
+      ],
+      "hint": "세포 사이의 틈을 '꽉' 메워주는 구조가 무엇인지 생각해보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 14,
+      "question": "심장 근육세포에서 전기적 신호(이온의 흐름)가 인접 세포로 순식간에 전달되어 동시 수축을 가능하게 하는 구조는?",
+      "options": [
+        {
+          "label": "A",
+          "text": "밀착연접 (Tight Junctions)",
+          "isCorrect": false,
+          "rationale": "밀착연접은 신호 전달보다는 물질의 흐름을 막는 장벽 역할을 합니다."
+        },
+        {
+          "label": "B",
+          "text": "핵라민 (Nuclear lamina)",
+          "isCorrect": false,
+          "rationale": "핵라민은 핵의 내부 구조물이며 세포 간 소통과는 관련이 없습니다."
+        },
+        {
+          "label": "C",
+          "text": "데스모솜 (Desmosome)",
+          "isCorrect": false,
+          "rationale": "데스모솜은 물리적 부착에는 기여하지만 신호 물질의 통로 역할은 하지 않습니다."
+        },
+        {
+          "label": "D",
+          "text": "간극연접 (Gap Junctions)",
+          "isCorrect": true,
+          "rationale": "간극연접은 세포질을 직접 연결하는 통로를 통해 이온의 신속한 확산을 가능케 합니다."
+        }
+      ],
+      "hint": "이온이나 아미노산 같은 작은 분자들이 직접 지나갈 수 있는 단백질 통로를 찾아보세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 15,
+      "question": "리보솜의 유형 중 결합 리보솜($Bound\\ ribosome$)에서 주로 합성되는 단백질의 운명이 아닌 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "세포막에 박혀 기능하는 막 단백질",
+          "isCorrect": false,
+          "rationale": "막 단백질은 소포체 막에 삽입되면서 합성되므로 결합 리보솜의 소관입니다."
+        },
+        {
+          "label": "B",
+          "text": "세포질 내에서 해당 작용을 수행하는 효소",
+          "isCorrect": true,
+          "rationale": "세포질에서 기능하는 단백질은 주로 자유 리보솜($Free\\ ribosome$)에서 합성됩니다."
+        },
+        {
+          "label": "C",
+          "text": "세포 외부로 방출되는 인슐린과 같은 분비 단백질",
+          "isCorrect": false,
+          "rationale": "분비 단백질은 조면소포체에 결합한 리보솜에서 합성되어 내막계를 거칩니다."
+        },
+        {
+          "label": "D",
+          "text": "리소좀 내부에서 소화를 담당하는 가수분해 효소",
+          "isCorrect": false,
+          "rationale": "특정 소기관 내부로 수송되어야 하는 단백질은 결합 리보솜에서 합성됩니다."
+        }
+      ],
+      "hint": "단백질이 합성된 후 소포체 내부나 막으로 들어가는지, 아니면 세포질에 머무는지 구분해보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 16,
+      "question": "식물 세포의 액포($Vacuole$) 기능에 대한 설명으로 적절하지 않은 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "포식자로부터 보호하기 위한 독성 물질을 격리 보관한다.",
+          "isCorrect": false,
+          "rationale": "액포는 식물의 방어 기전으로 독성 대사 산물을 격리하는 장소입니다."
+        },
+        {
+          "label": "B",
+          "text": "색소를 저장하여 수분을 도와줄 곤충을 유인한다.",
+          "isCorrect": false,
+          "rationale": "꽃잎 세포 등의 액포에는 화려한 색소가 들어있어 동물을 유인합니다."
+        },
+        {
+          "label": "C",
+          "text": "씨앗의 발아를 위해 단백질을 저장한다.",
+          "isCorrect": false,
+          "rationale": "식물 종자의 액포는 저장 단백질을 보관하는 창고 역할을 합니다."
+        },
+        {
+          "label": "D",
+          "text": "$ATP$ 합성을 위한 주된 장소로서 세포 호흡을 수행한다.",
+          "isCorrect": true,
+          "rationale": "$ATP$ 합성과 세포 호흡은 액포가 아닌 미토콘드리아의 기능입니다."
+        }
+      ],
+      "hint": "액포는 주로 저장, 분해, 삼투압 조절을 담당하는 커다란 주머니 형태임을 기억하세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 17,
+      "question": "테이-삭스병($Tay-Sachs\\ disease$)은 어떤 세포 소기관의 기능 이상으로 발생하는 유전 질환입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "퍼옥시좀 (Peroxisome)",
+          "isCorrect": false,
+          "rationale": "퍼옥시좀은 해독과 관련이 깊지만 테이-삭스병의 직접적인 원인 소기관은 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "활면소포체 (Smooth ER)",
+          "isCorrect": false,
+          "rationale": "지질 합성은 활면소포체에서 하지만 분해 이상 질환인 테이-삭스병과는 무관합니다."
+        },
+        {
+          "label": "C",
+          "text": "리소좀 (Lysosome)",
+          "isCorrect": true,
+          "rationale": "리소좀 내 지질 분해 효소의 결핍으로 지질이 뇌 세포에 축적되어 발생하는 질환입니다."
+        },
+        {
+          "label": "D",
+          "text": "골지체 (Golgi apparatus)",
+          "isCorrect": false,
+          "rationale": "골지체는 수송과 가공을 담당하지만 특정 분해 효소 결핍증과 직접 연결되지는 않습니다."
+        }
+      ],
+      "hint": "세포 내 '청소부' 또는 '재활용 센터' 역할을 하는 기관에 문제가 생겼을 때의 상황을 생각해보세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 18,
+      "question": "엽록체의 내부 구조 중 광합성 색소가 존재하며 동전처럼 겹겹이 쌓여 그라나($Grana$)를 형성하는 막 구조물은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "틸라코이드 (Thylakoid)",
+          "isCorrect": true,
+          "rationale": "틸라코이드는 납작한 막 주머니로 광합성 반응이 일어나는 핵심 장소입니다."
+        },
+        {
+          "label": "B",
+          "text": "기질 (Matrix)",
+          "isCorrect": false,
+          "rationale": "기질은 미토콘드리아 내막 안쪽의 공간을 의미합니다."
+        },
+        {
+          "label": "C",
+          "text": "스트로마 (Stroma)",
+          "isCorrect": false,
+          "rationale": "스트로마는 틸라코이드 외부를 채우는 액체 공간으로 $DNA$와 리보솜이 존재합니다."
+        },
+        {
+          "label": "D",
+          "text": "크리스테 (Cristae)",
+          "isCorrect": false,
+          "rationale": "크리스테는 미토콘드리아 내막의 주름진 구조를 일컫는 말입니다."
+        }
+      ],
+      "hint": "엽록체 내부에 존재하는 평평한 막성 주머니의 이름을 찾아보세요.",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 19,
+      "question": "근육 세포에서 수축 신호가 전달될 때 칼슘 이온($Ca^{2+}$)을 방출하고 평상시에 이를 저장하는 역할을 하는 소기관은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "미토콘드리아 (Mitochondria)",
+          "isCorrect": false,
+          "rationale": "미토콘드리아는 에너지를 공급하지만 칼슘 저장의 핵심 장소는 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "리소좀 (Lysosome)",
+          "isCorrect": false,
+          "rationale": "리소좀은 가수분해를 담당하며 이온 대사와는 직접적인 연관이 적습니다."
+        },
+        {
+          "label": "C",
+          "text": "활면소포체 (Smooth ER)",
+          "isCorrect": true,
+          "rationale": "활면소포체는 특화된 기능으로 칼슘 이온을 저장하고 방출하여 근육 수축을 조절합니다."
+        },
+        {
+          "label": "D",
+          "text": "조면소포체 (Rough ER)",
+          "isCorrect": false,
+          "rationale": "조면소포체는 단백질 합성에 집중하며 이온 저장 기능은 활면소포체의 몫입니다."
+        }
+      ],
+      "hint": "리보솜이 붙어있지 않은 소포체의 대사 기능 중 하나를 생각해보세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 20,
+      "question": "동물 세포의 미세소관 형성 중심지인 중심체($Centrosome$) 내부에 존재하는 한 쌍의 중심립($Centriole$)은 어떤 구조를 취하고 있습니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "$9+2$ 구조 (2개의 중앙 미세소관 포함)",
+          "isCorrect": false,
+          "rationale": "$9+2$ 구조는 운동성이 있는 섬모나 편모의 몸체 구조입니다."
+        },
+        {
+          "label": "B",
+          "text": "$9+0$ 구조 (3개의 미세소관 묶음 9세트)",
+          "isCorrect": true,
+          "rationale": "중심립은 3개의 미세소관이 겹쳐진 구조가 9세트 원형으로 배열된 $9+0$ 패턴을 가집니다."
+        },
+        {
+          "label": "C",
+          "text": "나선형으로 꼬인 액틴 섬유 구조",
+          "isCorrect": false,
+          "rationale": "액틴 섬유는 미세섬유의 구성 성분이며 미세소관과는 다른 골격입니다."
+        },
+        {
+          "label": "D",
+          "text": "단일막으로 싸인 원형질 구조",
+          "isCorrect": false,
+          "rationale": "중심립은 막 구조물이 아니며 단백질 섬유인 미세소관의 집합체입니다."
+        }
+      ],
+      "hint": "중앙에 미세소관이 존재하는지 여부와 미세소관의 묶음 단위를 확인해보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 21,
+      "question": "미세섬유($Microfilament$)의 핵심 성분인 액틴과 상호작용하여 근육 수축이나 아메바 운동을 일으키는 운동 단백질은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "디네인 (Dynein)",
+          "isCorrect": false,
+          "rationale": "디네인은 미세소관 사이에서 작용하여 섬모와 편모를 굽히는 단백질입니다."
+        },
+        {
+          "label": "B",
+          "text": "마이오신 (Myosin)",
+          "isCorrect": true,
+          "rationale": "마이오신은 액틴과 결합하여 걸어가며 수축력을 발생시키는 미세섬유 기반 운동 단백질입니다."
+        },
+        {
+          "label": "C",
+          "text": "케라틴 (Keratin)",
+          "isCorrect": false,
+          "rationale": "케라틴은 중간섬유를 구성하는 단백질로 운동성보다는 지지에 관여합니다."
+        },
+        {
+          "label": "D",
+          "text": "튜불린 (Tubulin)",
+          "isCorrect": false,
+          "rationale": "튜불린은 미세소관을 구성하는 기본 단위 단백질입니다."
+        }
+      ],
+      "hint": "근육의 수축을 설명할 때 액틴과 항상 짝지어 나오는 단백질의 이름을 떠올려보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 22,
+      "question": "핵막을 안쪽에서 받쳐주며 핵의 형태를 유지하고 기계적 지지를 제공하는 구조물과 그 구성 성분은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "핵라민 - 미세소관",
+          "isCorrect": false,
+          "rationale": "미세소관은 핵 내부의 형태 유지보다는 세포 전체의 골격과 운송에 관여합니다."
+        },
+        {
+          "label": "B",
+          "text": "핵라민 - 중간섬유",
+          "isCorrect": true,
+          "rationale": "핵라민은 핵막 내측에 그물망처럼 존재하며 중간섬유 단백질로 구성되어 핵을 보호합니다."
+        },
+        {
+          "label": "C",
+          "text": "염색질 - $DNA$",
+          "isCorrect": false,
+          "rationale": "염색질은 유전 정보를 담고 있는 물질이지 핵막을 지탱하는 골격 성분은 아닙니다."
+        },
+        {
+          "label": "D",
+          "text": "핵공 복합체 - 당단백질",
+          "isCorrect": false,
+          "rationale": "핵공 복합체는 물질 교환 통로이며 형태 유지를 위한 장벽 구조물은 아닙니다."
+        }
+      ],
+      "hint": "핵막 바로 아래에 위치한 '라민'이라는 이름의 구조와 그것이 속한 세포골격 종류를 연결해보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 23,
+      "question": "동물세포의 $ECM$에서 가장 풍부하며 생체 단백질의 약 40\\%를 차지하여 강한 인장력을 제공하는 성분은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "엘라스틴 (Elastin)",
+          "isCorrect": false,
+          "rationale": "엘라스틴은 탄력성을 제공하지만 본문에서 설명하는 가장 압도적인 비율의 단백질은 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "콜라겐 (Collagen)",
+          "isCorrect": true,
+          "rationale": "콜라겐은 동물세포 외부에서 강한 섬유망을 형성하여 구조적 강도를 제공하는 가장 흔한 단백질입니다."
+        },
+        {
+          "label": "C",
+          "text": "셀룰로스 (Cellulose)",
+          "isCorrect": false,
+          "rationale": "셀룰로스는 식물 세포벽의 성분이며 동물세포에는 존재하지 않습니다."
+        },
+        {
+          "label": "D",
+          "text": "파이브로넥틴 (Fibronectin)",
+          "isCorrect": false,
+          "rationale": "파이브로넥틴은 연결 가교 역할을 하지만 양적으로 가장 많은 주성분은 아닙니다."
+        }
+      ],
+      "hint": "피부나 뼈의 강도를 유지하는 데 매우 중요하며 당단백질의 일종인 성분입니다.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 24,
+      "question": "세포 간 신호 전달 경로 중 외부 물리적 자극이 핵까지 전달되는 올바른 순서는?",
+      "options": [
+        {
+          "label": "A",
+          "text": "미세섬유 $\\rightarrow$ 인테그린 $\\rightarrow$ 파이브로넥틴",
+          "isCorrect": false,
+          "rationale": "이는 내부 신호가 밖으로 나가는 방향이며, 외부 자극 수용 경로는 반대입니다."
+        },
+        {
+          "label": "B",
+          "text": "콜라겐 $\\rightarrow$ 핵라민 $\\rightarrow$ 미세소관",
+          "isCorrect": false,
+          "rationale": "콜라겐은 자극의 원천이 될 수 있으나 핵라민과 미세소관으로 이어지는 직통 경로는 아닙니다."
+        },
+        {
+          "label": "C",
+          "text": "인테그린 $\\rightarrow$ 미세소관 $\\rightarrow$ 콜라겐",
+          "isCorrect": false,
+          "rationale": "인테그린은 미세소관보다는 미세섬유와 직접적으로 물리적 연결을 맺고 있습니다."
+        },
+        {
+          "label": "D",
+          "text": "파이브로넥틴 $\\rightarrow$ 인테그린 $\\rightarrow$ 미세섬유",
+          "isCorrect": true,
+          "rationale": "외부의 $ECM$(파이브로넥틴) 자극은 막 수용체(인테그린)를 거쳐 내부 골격(미세섬유)으로 전달됩니다."
+        }
+      ],
+      "hint": "$ECM$에서 세포막을 거쳐 세포질 내부 골격으로 들어가는 흐름을 생각해보세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 25,
+      "question": "식물 세포벽의 2차 세포벽($Secondary\\ cell\\ wall$)에 대한 설명으로 옳은 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "모든 식물 세포가 반드시 갖추어야 하는 필수적인 구조이다.",
+          "isCorrect": false,
+          "rationale": "모든 식물이 아닌, 목질화가 일어나거나 강한 지지가 필요한 특정 세포에서 발달합니다."
+        },
+        {
+          "label": "B",
+          "text": "어린 식물 세포가 가장 먼저 분비하는 얇은 막이다.",
+          "isCorrect": false,
+          "rationale": "이는 1차 세포벽에 대한 설명입니다."
+        },
+        {
+          "label": "C",
+          "text": "펙틴 성분이 가득하여 세포들을 서로 붙여주는 역할을 한다.",
+          "isCorrect": false,
+          "rationale": "펙틴에 의한 접착은 중간라멜라의 주요 기능입니다."
+        },
+        {
+          "label": "D",
+          "text": "성장이 멈춘 후 원형질막과 1차 세포벽 사이에 형성된다.",
+          "isCorrect": true,
+          "rationale": "2차 세포벽은 세포 성숙 후 안쪽에 추가로 쌓이며 리그닌을 포함해 매우 단단합니다."
+        }
+      ],
+      "hint": "세포의 성장이 끝난 뒤 지지력을 극대화하기 위해 나중에 만들어지는 층의 위치를 확인하세요.",
+      "correctAnswer": "D"
+    },
+    {
+      "number": 26,
+      "question": "데스모솜($Desmosome$)의 기계적 결합을 견고하게 지탱해주는 세포 내부의 골격 성분은 무엇입니까?",
+      "options": [
+        {
+          "label": "A",
+          "text": "셀룰로스 (Cellulose)",
+          "isCorrect": false,
+          "rationale": "셀룰로스는 식물 세포벽 성분이며 동물세포의 연접 구조 골격이 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "미세소관 (Microtubule)",
+          "isCorrect": false,
+          "rationale": "미세소관은 세포 내 운송에 주로 쓰이며 데스모솜의 주요 지지 골격은 아닙니다."
+        },
+        {
+          "label": "C",
+          "text": "중간섬유 (Intermediate Filament)",
+          "isCorrect": true,
+          "rationale": "중간섬유는 데스모솜과 결합하여 강한 인장력과 마찰로부터 세포 연결을 보호하는 닻 역할을 합니다."
+        },
+        {
+          "label": "D",
+          "text": "미세섬유 (Microfilament)",
+          "isCorrect": false,
+          "rationale": "미세섬유는 주로 밀착연접이나 부착연접의 일부와 관련되지만 데스모솜의 핵심은 중간섬유입니다."
+        }
+      ],
+      "hint": "피부나 근육처럼 잡아당기는 힘에 강하게 저항해야 하는 조직에서 쓰이는 가장 튼튼한 섬유를 생각해보세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 27,
+      "question": "과산화수소($\\text{H}_2\\text{O}_2$)를 물과 산소로 분해하는 카탈레이스 효소를 함유한 단일막 소기관은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "리소좀 (Lysosome)",
+          "isCorrect": false,
+          "rationale": "리소좀은 산성 가수분해 효소를 가지며 산화 효소를 처리하는 곳은 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "미토콘드리아 (Mitochondria)",
+          "isCorrect": false,
+          "rationale": "미토콘드리아는 에너지를 만들지만 과산화수소 전담 분해 기관은 퍼옥시좀입니다."
+        },
+        {
+          "label": "C",
+          "text": "퍼옥시좀 (Peroxisome)",
+          "isCorrect": true,
+          "rationale": "퍼옥시좀은 산화 과정의 부산물인 독성 과산화수소를 카탈레이스로 안전하게 분해합니다."
+        },
+        {
+          "label": "D",
+          "text": "액포 (Vacuole)",
+          "isCorrect": false,
+          "rationale": "액포는 저장과 삼투 조절을 하며 카탈레이스 반응의 주된 장소는 아닙니다."
+        }
+      ],
+      "hint": "이름 자체에 '과산화물(Peroxide)'이라는 의미가 포함되어 있는 소기관을 찾아보세요.",
+      "correctAnswer": "C"
+    },
+    {
+      "number": 28,
+      "question": "식물 씨앗의 지방 저장 조직에 존재하며, 지방을 당으로 전환하여 싹이 틀 때 에너지를 공급하는 특화된 소기관은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "글라이옥시좀 (Glyoxysome)",
+          "isCorrect": true,
+          "rationale": "글라이옥시좀은 퍼옥시좀의 일종으로 식물 초기 성장을 위해 지방을 당으로 바꾸는 대사를 수행합니다."
+        },
+        {
+          "label": "B",
+          "text": "활면소포체 (Smooth ER)",
+          "isCorrect": false,
+          "rationale": "지질 합성은 하지만 대규모의 지방-당 전환 대사는 글라이옥시좀이 담당합니다."
+        },
+        {
+          "label": "C",
+          "text": "엽록체 (Chloroplast)",
+          "isCorrect": false,
+          "rationale": "엽록체는 빛을 이용해 당을 만들며, 씨앗 속의 지방을 직접 당으로 바꾸는 곳은 아닙니다."
+        },
+        {
+          "label": "D",
+          "text": "아밀로플라스트 (Amyloplast)",
+          "isCorrect": false,
+          "rationale": "아밀로플라스트는 녹말을 저장하는 곳이며 지방-당 전환과는 거리가 있습니다."
+        }
+      ],
+      "hint": "퍼옥시좀의 변형된 형태 중 하나로 식물의 발아 과정에서 중요한 역할을 합니다.",
+      "correctAnswer": "A"
+    },
+    {
+      "number": 29,
+      "question": "다음 중 미세소관($Microtubule$)의 '이합체($Dimer$)'를 구성하는 단백질 쌍으로 옳은 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "디네인과 넥신",
+          "isCorrect": false,
+          "rationale": "디네인은 운동 단백질이며 미세소관 자체의 빌딩 블록인 이합체 성분은 아닙니다."
+        },
+        {
+          "label": "B",
+          "text": "$\\alpha$-튜불린과 $\\beta$-튜불린",
+          "isCorrect": true,
+          "rationale": "미세소관은 알파와 베타 두 종류의 튜불린 단백질이 결합한 이합체가 쌓여 만들어집니다."
+        },
+        {
+          "label": "C",
+          "text": "액틴과 마이오신",
+          "isCorrect": false,
+          "rationale": "이들은 미세섬유 및 근육 수축과 관련된 단백질 조합입니다."
+        },
+        {
+          "label": "D",
+          "text": "케라틴과 콜라겐",
+          "isCorrect": false,
+          "rationale": "케라틴은 중간섬유, 콜라겐은 $ECM$의 주성분으로 서로 다른 위치에 존재합니다."
+        }
+      ],
+      "hint": "미세소관의 관 모양을 형성하는 기본 단위인 '튜불린'의 두 가지 형태를 생각해보세요.",
+      "correctAnswer": "B"
+    },
+    {
+      "number": 30,
+      "question": "내막계 소기관들의 상호작용 경로를 올바르게 설명한 것은?",
+      "options": [
+        {
+          "label": "A",
+          "text": "핵막 $\\rightarrow$ 소포체 $\\rightarrow$ 골지체 $\\rightarrow$ 리소좀 또는 세포막",
+          "isCorrect": true,
+          "rationale": "물질은 핵막과 연결된 소포체에서 합성되어 골지체를 거쳐 최종 목적지인 리소좀이나 세포 외부로 수송됩니다."
+        },
+        {
+          "label": "B",
+          "text": "소포체 $\\rightarrow$ 퍼옥시좀 $\\rightarrow$ 엽록체 $\\rightarrow$ 액포",
+          "isCorrect": false,
+          "rationale": "퍼옥시좀과 엽록체는 전형적인 내막계 수송 경로(소포 운반)에 포함되지 않는 독립적 성격이 강합니다."
+        },
+        {
+          "label": "C",
+          "text": "세포막 $\\rightarrow$ 리소좀 $\\rightarrow$ 골지체 $\\rightarrow$ 소포체",
+          "isCorrect": false,
+          "rationale": "이는 분비 경로의 역방향이며 일반적인 합성 및 수송 경로와 일치하지 않습니다."
+        },
+        {
+          "label": "D",
+          "text": "골지체 $\\rightarrow$ 소포체 $\\rightarrow$ 핵막 $\\rightarrow$ 미토콘드리아",
+          "isCorrect": false,
+          "rationale": "미토콘드리아는 내막계의 흐름에 직접 포함되지 않으며 흐름의 방향도 잘못되었습니다."
+        }
+      ],
+      "hint": "단백질이 만들어지는 곳에서 시작하여 가공을 거쳐 밖으로 나가거나 분해되는 순서를 떠올려보세요.",
+      "correctAnswer": "A"
+    }
+  ]
+}
