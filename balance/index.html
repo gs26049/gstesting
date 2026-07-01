@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화학 반응식 균형 맞추기 트레이너</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 650px;
+            margin: 100px auto;
+            padding: 20px;
+            color: #222;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .header {
+            font-size: 0.9rem;
+            color: #666;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .equation-box {
+            font-size: 1.8rem;
+            padding: 20px 0;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .input-box:focus {
+            border-color: #000;
+        }
+        .result-box {
+            font-size: 1.1rem;
+            font-weight: bold;
+            min-height: 30px;
+        }
+        .success { color: #2e7d32; }
+        .error { color: #c62828; }
+        .tip {
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span id="quiz-count">문제 1</span>
+        <span id="score-board">정답: 0 / 0</span>
+    </div>
+
+    <div id="equation" class="equation-box"></div>
+
+    <input type="text" id="user-input" class="input-box" placeholder="계수를 순서대로 입력 (예: 2 1 2)" autocomplete="off" autofocus>
+
+    <div id="result" class="result-box"></div>
+
+    <div class="tip" id="tip-text">정답을 입력하고 [Enter]를 누르세요.</div>
+</div>
+
+<script>
+    // 실제 존재하는 화학 원소 풀 (인식하기 쉬운 기본 원소 위주)
+    const ELEMENTS_POOL = ['H', 'O', 'N', 'C', 'Fe', 'Al', 'Na', 'Mg', 'K', 'Cl', 'Cu', 'Ag', 'S', 'P', 'Ca', 'Zn', 'Ba', 'F', 'I'];
+
+    let currentAnswer = [];
+    let gameState = 'INPUT'; // 'INPUT' 또는 'RESULT'
+    let totalQuestions = 0;
+    let correctAnswers = 0;
+
+    // --- 수학 관련 유틸리티 함수 (행렬 및 GCD) ---
+    function gcd(a, b) {
+        while (b) { let t = b; b = a % b; a = t; }
+        return a;
+    }
+
+    function gcdList(arr) {
+        let g = arr[0];
+        for (let i = 1; i < arr.length; i++) g = Math.abs(gcd(g, arr[i]));
+        return g;
+    }
+
+    function getRank(matrix) {
+        let M = matrix.map(row => [...row]);
+        let rows = M.length;
+        let cols = rows > 0 ? M[0].length : 0;
+        let pivot = 0;
+        const eps = 1e-9;
+
+        for (let c = 0; c < cols; c++) {
+            if (pivot >= rows) break;
+            let r_max = pivot;
+            while (r_max < rows && Math.abs(M[r_max][c]) < eps) r_max++;
+            if (r_max === rows) continue;
+
+            let tmp = M[pivot]; M[pivot] = M[r_max]; M[r_max] = tmp;
+            let pv = M[pivot][c];
+            M[pivot] = M[pivot].map(x => x / pv);
+
+            for (let r = 0; r < rows; r++) {
+                if (r !== pivot && Math.abs(M[r][c]) > eps) {
+                    let factor = M[r][c];
+                    M[r] = M[r].map((x, i) => x - factor * M[pivot][i]);
+                }
+            }
+            pivot++;
+        }
+        let rank = 0;
+        for (let r = 0; r < rows; r++) {
+            if (M[r].some(x => Math.abs(x) > eps)) rank++;
+        }
+        return rank;
+    }
+
+    // --- 무한 반응식 생성 알고리즘 ---
+    function generateEquation() {
+        while (true) {
+            let R = Math.floor(Math.random() * 2) + 2; // 반응물 2~3개
+            let P = Math.floor(Math.random() * 2) + 2; // 생성물 2~3개
+            let numMols = R + P;
+
+            // 원소 3~5개 무작위 선택
+            let shuffled = [...ELEMENTS_POOL].sort(() => 0.5 - Math.random());
+            let elements = shuffled.slice(0, Math.floor(Math.random() * 3) + 3);
+
+            let baseCoeffs = Array.from({length: numMols}, () => Math.floor(Math.random() * 3) + 1);
+
+            let reactants = Array.from({length: R}, () => ({}));
+            let products = Array.from({length: P}, () => ({}));
+
+            // 모든 분자에 원소 강제 매핑 및 보정
+            for (let j = 0; j < R; j++) {
+                let k = Math.floor(Math.random() * P);
+                let ele = elements[Math.floor(Math.random() * elements.length)];
+                let f = Math.floor(Math.random() * 2) + 1;
+                reactants[j][ele] = (reactants[j][ele] || 0) + baseCoeffs[R + k] * f;
+                products[k][ele] = (products[k][ele] || 0) + baseCoeffs[j] * f;
+            }
+            for (let k = 0; k < P; k++) {
+                let j = Math.floor(Math.random() * R);
+                let ele = elements[Math.floor(Math.random() * elements.length)];
+                let f = Math.floor(Math.random() * 2) + 1;
+                reactants[j][ele] = (reactants[j][ele] || 0) + baseCoeffs[R + k] * f;
+                products[k][ele] = (products[k][ele] || 0) + baseCoeffs[j] * f;
+            }
+
+            // 질량 보존 행렬 생성
+            let matrix = [];
+            for (let ele of elements) {
+                let row = [];
+                for (let i = 0; i < R; i++) row.push(reactants[i][ele] || 0);
+                for (let i = 0; i < P; i++) row.push(-(products[i][ele] || 0));
+                matrix.push(row);
+            }
+
+            // 유일해 검증 (Rank 선형대수 알고리즘)
+            if (getRank(matrix) === numMols - 1) {
+                let g = gcdList(baseCoeffs);
+                let finalCoeffs = baseCoeffs.map(c => c / g);
+
+                function molToKaTeX(mol) {
+                    let sortedKeys = Object.keys(mol).sort();
+                    let s = "";
+                    for (let e of sortedKeys) {
+                        if (mol[e] > 0) {
+                            s += `\\text{${e}}`;
+                            if (mol[e] > 1) s += `_{${mol[e]}}`;
+                        }
+                    }
+                    return s;
+                }
+
+                let rStrs = reactants.map(m => molToKaTeX(m));
+                let pStrs = products.map(m => molToKaTeX(m));
+
+                if (rStrs.some(s => !s) || pStrs.some(s => !s)) continue;
+
+                // KaTeX용 수식 문자열 조합
+                let katexStr = "\\underline{\\quad} " + rStrs.join(" + \\underline{\\quad} ") + " \\rightarrow \\underline{\\quad} " + pStrs.join(" + \\underline{\\quad} ");
+                return { display: katexStr, ans: finalCoeffs };
+            }
+        }
+    }
+
+    // --- 흐름 제어 및 UI 렌더링 ---
+    const equationEl = document.getElementById('equation');
+    const inputEl = document.getElementById('user-input');
+    const resultEl = document.getElementById('result');
+    const countEl = document.getElementById('quiz-count');
+    const scoreEl = document.getElementById('score-board');
+    const tipEl = document.getElementById('tip-text');
+
+    function nextQuestion() {
+        gameState = 'INPUT';
+        totalQuestions++;
+        
+        // 1. 창 초기화 느낌으로 화면 비우기
+        countEl.textContent = `문제 ${totalQuestions}`;
+        resultEl.innerHTML = '';
+        inputEl.value = '';
+        inputEl.disabled = false;
+        tipEl.textContent = "정답을 입력하고 [Enter]를 누르세요.";
+        
+        // 2. 문제 원클릭 생성 및 KaTeX 렌더링
+        let quiz = generateEquation();
+        currentAnswer = quiz.ans;
+        katex.render(quiz.display, equationEl, { throwOnError: false });
+        
+        inputEl.focus();
+    }
+
+    function checkAnswer() {
+        let rawInput = inputEl.value.trim();
+        let parsed = rawInput.replace(/,/g, ' ').split(/\s+/);
+        let userAns = parsed.map(x => parseInt(x, 10));
+
+        // 예외 처리 (숫자가 아니거나 개수가 안 맞으면 넘김 무효 처리 후 재입력 유도 가능하나 흐름상 진행)
+        if (userAns.some(isNaN) || userAns.length !== currentAnswer.length) {
+            resultEl.className = "result-box error";
+            resultEl.textContent = `❌ 입력 형식이 올바르지 않습니다. 총 ${currentAnswer.length}개의 숫자가 필요합니다.`;
+            tipEl.textContent = "[Enter]를 누르면 다시 이 문제의 정답을 입력할 수 있습니다.";
+            gameState = 'RESULT_ERROR';
+            return;
+        }
+
+        gameState = 'RESULT';
+        inputEl.disabled = true;
+
+        let isCorrect = userAns.every((val, idx) => val === currentAnswer[idx]);
+
+        if (isCorrect) {
+            correctAnswers++;
+            resultEl.className = "result-box success";
+            resultEl.textContent = "✨ 정답입니다! 완벽한 균형입니다.";
+        } else {
+            resultEl.className = "result-box error";
+            resultEl.textContent = `😢 아쉽습니다. 정답은 [ ${currentAnswer.join(' ')} ] 입니다.`;
+        }
+
+        scoreEl.textContent = `정답: ${correctAnswers} / ${totalQuestions}`;
+        tipEl.textContent = "[Enter]를 누르면 화면이 초기화되고 다음 문제로 넘어갑니다.";
+    }
+
+    // 엔터키 의식의 흐름 이벤트 바인딩
+    window.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            if (gameState === 'INPUT') {
+                checkAnswer();
+            } else if (gameState === 'RESULT') {
+                nextQuestion();
+            } else if (gameState === 'RESULT_ERROR') {
+                // 입력 오류 시 창을 완전히 리셋하지 않고 정답을 다시 적을 수 있게 배려
+                resultEl.innerHTML = '';
+                inputEl.disabled = false;
+                inputEl.focus();
+                tipEl.textContent = "정답을 입력하고 [Enter]를 누르세요.";
+                gameState = 'INPUT';
+            }
+        }
+    });
+
+    // 첫 문제 시작
+    window.onload = function() {
+        nextQuestion();
+    };
+</script>
+
+</body>
+</html>
