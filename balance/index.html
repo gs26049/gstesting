@@ -99,6 +99,20 @@
         return g;
     }
 
+    function randomGaussian(mean = 0, stdDev = 1) {
+        let u = 0, v = 0;
+        // Converted from [0, 1) to (0, 1) to avoid log(0)
+        while(u === 0) u = Math.random(); 
+        while(v === 0) v = Math.random();
+        
+        // Box-Muller transform formula
+        const num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+        
+        // Scale by standard deviation and shift by mean
+        return num * stdDev + mean;
+    }
+
+
     function getRank(matrix) {
         let M = matrix.map(row => [...row]);
         let rows = M.length;
@@ -142,7 +156,7 @@
             let shuffled = [...ELEMENTS_POOL].sort(() => 0.5 - Math.random());
             let elements = shuffled.slice(0, Math.floor(Math.random() * 3) + 3);
 
-            let baseCoeffs = Array.from({length: numMols}, () => Math.floor(Math.random() * 7) + 1);
+            let baseCoeffs = Array.from({length: numMols}, () => Math.floor(1 + Math.abs(randomGaussian(0, 3))) + 1);
 
             let reactants = Array.from({length: R}, () => ({}));
             let products = Array.from({length: P}, () => ({}));
