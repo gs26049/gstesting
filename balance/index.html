@@ -156,7 +156,7 @@
             let shuffled = [...ELEMENTS_POOL].sort(() => 0.5 - Math.random());
             let elements = shuffled.slice(0, Math.floor(Math.random() * 3) + 3);
 
-            let baseCoeffs = Array.from({length: numMols}, () => Math.floor(1 + Math.abs(randomGaussian(0, 3))) + 1);
+            let baseCoeffs = Array.from({length: numMols}, () => Math.floor(Math.abs(randomGaussian(0, 3))) + 1);
 
             let reactants = Array.from({length: R}, () => ({}));
             let products = Array.from({length: P}, () => ({}));
